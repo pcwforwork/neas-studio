@@ -66,7 +66,7 @@ a {
     width: 240px;
     border-radius: 10rem 10rem 0 0;
 } */
-.hero__arch {
+.block_arch {
     width: 100%;
     height: 400px;
     background: hsl(22, 100%, 80%,.5);
@@ -85,7 +85,7 @@ a {
 }
 /* Reply */
 .reply_image {
-    border-radius: 50%;
+    border-radius: 50% !important;
     border: 2rem solid #fff;
 }
 
