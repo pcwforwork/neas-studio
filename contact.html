@@ -13,116 +13,96 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg backdrop-blur sticky">
-        <div class="container">
-          <a class="navbar-brand" href="./index.html">Nesa</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html#services">關於服務</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./gallery.html">作品展示</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html#faq">常見問題</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">聯絡方式</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">立即預約</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">Nesa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html#services">關於服務</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gallery.html">作品展示</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">常見問題</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html#contact">聯絡方式</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">立即預約</a>
+            </li>
+          </ul>
         </div>
-    </nav> 
+      </div>
+  </nav> 
 
-    <!-- Form -->
-    <section class="justify-content-center py-5">
+    <!-- Message -->
+    <section id="message" class="justify-content-center py-5">
         <div class="container col-md-5 py-3">
           <div class="row text-align-center py-3">
             <p class="title-deco">CONTACT</p>
-            <h1>提出疑問</h1>
+            <h1>留言詢問</h1>
           </div>
           <form>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">客人尊名</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label class="form-label">客人尊名</label>
+              <input type="email" placeholder="Aloe" class="form-control">
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">電話號碼</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label class="form-label">電話號碼</label>
+              <input type="number" placeholder="0912345678" class="form-control">
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="InputEmail" class="form-label">Email</label>
+              <input type="email" placeholder="abc@gmail.com" class="form-control" id="InputEmail" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">我的問題</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label class="form-label">問題內容</label>
+              <textarea placeholder="我們會盡快回答您的問題，請耐心等候。" class="form-control" aria-label="With textarea"></textarea>
             </div>
+            
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">確認</label>
             </div>
-            <button type="submit" class="btn btn-primary">送出問題</button>
+            <button type="submit" class="btn btn-primary">送出</button>
           </form>
             
         </div>
     </section>
     
-    <!-- Contact -->
-    <section id="contact" class="py-5">
-      <div class="container my-5">
-        <div class="row justify-content-between">
-          <div class="col-md-4 py-3">
-            <p class="title-deco">CONTACT</p>
-            <h1>聯絡方式</h1>
-            <div class="py-3">
-              <p><i class="uil uil-calender"></i> 營業時間 10:30-20:00 (店採預約制)</p>
-              <p><i class="uil uil-phone"></i> 聯絡電話 000-0000</p>
-              <p><i class="uil uil-map-marker"></i> 店家地址 彰化市彰化路000巷</p>
-              <button type="button" class="btn btn-primary">立即預約</button>
-            </div>
-          </div>
-            <div class="col-md-6 py-3">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.5648567800304!2d120.53580297517429!3d24.0816235784459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469389a1098711f%3A0x4a72729f089dc8d0!2z5b2w5YyW6LuK56uZ!5e0!3m2!1szh-TW!2stw!4v1717861652794!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-      </div>
   
-    </section>
-
     <!-- Footer -->
     <section id="footer" class="bg-color py-5">
-        <div class="container d-flex justify-content-between align-items-center">
-          
-          <div class="footer_socials py-3">
-              <a href="https://www.instagram.com/nesa_naildesign/" class="footer_social">
-                  <i class="uil uil-instagram"></i>
-              </a>
-              <a href="#" class="footer_social">
-                  <i class="uil uil-line"></i>                        
-              </a>
-              <a href="#" class="footer_social">
-                  <i class="uil uil-facebook"></i>                        
-              </a>
-          </div>
-            <div class="text-align-center">
-                <p>Copyright@2024 Nesa naildesign</p>
-                <p>Design by Aloe</p>
-            </div>  
-    
-            <div>
-              <a href="#" type="button" class="btn btn-lg btn-light">
-                <i class="uil uil-arrow-up scrollup_icon"></i>
-              </a>
+        <div class="container">
+          <div class="row align-items-center text-align-center">
+            <div class="footer_socials col-md-2 py-3">
+                <a href="https://www.instagram.com/nesa_naildesign/" class="footer_social">
+                    <i class="uil uil-instagram"></i>
+                </a>
+                <a href="#" class="footer_social">
+                    <i class="uil uil-line"></i>                        
+                </a>
+                <a href="#" class="footer_social">
+                    <i class="uil uil-facebook"></i>                        
+                </a>
             </div>
+              <div class="col-md-8">
+                  <p>Copyright@2024 Nesa naildesign</p>
+                  <p>Design by Aloe</p>
+              </div>  
+              <div class="col-md-2">
+                <a href="#" type="button" class="btn btn-lg btn-light">
+                  <i class="uil uil-arrow-up scrollup_icon"></i>
+                </a>
+              </div>
+          </div>
         </div>
-      </section>
+    </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./stylesheet/filter-gallery.js"></script>
