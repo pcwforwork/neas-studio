@@ -24,7 +24,7 @@
 .swiper-button-prev::after {
   /* content: ''; */
   top: 50%;
-  background: #fff;
+  background: #ffffff;
   color: #000;
   height: 46px;
   width: 46px;
@@ -47,7 +47,7 @@
   bottom: -2.5rem;
 }
 .swiper-pagination-bullet-active {
-  background-color: white;
+  background-color: #ffffff;
 }
 .swiper-button-prev,
 .swiper-button-next,
