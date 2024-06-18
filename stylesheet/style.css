@@ -13,6 +13,9 @@
     --title-color: hsl(var(--hue-color), 32%, 56%);
     --text-color: hsl(var(--hue-color), 25%, 40%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
+
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 }
 
 body {
@@ -58,6 +61,11 @@ h1, h2, h3, h4 {
 }
 .height-s5 {
     height: 360px;
+}
+
+.form-control::placeholder {
+    color: var(--primary-color);
+    opacity: 1;
 }
 
 /* button */
@@ -134,7 +142,6 @@ h1, h2, h3, h4 {
     /* align-items: flex-end; */
 }
 /* Works */
-
 .works_image-frame {
     border: .5rem solid rgba(255, 255, 255, .5);
     border-radius: 1rem;
@@ -146,12 +153,10 @@ h1, h2, h3, h4 {
     height: 360px;
     object-fit: cover;
 }
-
 .works_image:hover {
     scale: 120%;
     transition: scale 800ms;
 }
-
 .works_link {
     text-decoration: none;
     color: var(--text-color);
@@ -161,12 +166,10 @@ h1, h2, h3, h4 {
     border-radius: 1.8rem;     /* 要記得加上padding的數值=>0.3+1.5 */
     padding: 1.5rem 1.5rem;
 }
-
 .feedback_deco {
     color: var(--primary-color);
     font-size: 1.5rem;
 }
-
 .card {
     color: var(--text-color);
 }
@@ -175,25 +178,21 @@ h1, h2, h3, h4 {
 .accordion-button {
     color: var(--title-color);
 }
-
 .accordion-button:not(.collapsed) {
     color: var(--title-color);
     background-color: var(--primary-color);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
-  }
+}
 .accordion-button:focus {
     z-index: 3;
     border-color: var(--primary-color);
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(255, 190, 152,.25);
-  }
+}
 .accordion-body {
     color: var(--text-color);
 }
-.form-control::placeholder {
-    color: var(--primary-color);
-    opacity: 1;
-  }
+
 /* Footer */
 #footer {
     bottom: 0;
@@ -224,7 +223,16 @@ h1, h2, h3, h4 {
 .filter_buttons {
     flex-wrap: wrap;
 }
-
+.btn-outline-secondary {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, .3);
+}
+.btn-outline-secondary:active, .btn-outline-secondary.active {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, .3);
+  }
 .filterable_cards {
     justify-content: center;
     display: flex;
@@ -236,14 +244,13 @@ h1, h2, h3, h4 {
     flex-grow: 1;
     border: .5rem solid #fff;
 }
-
 .filterable_cards .card img {
     width: 100%;
     height: 360px;
     object-fit: cover;
     position: relative;
+    border: 1px solid rgba(255, 255, 255, .3);
 }
-
 .filterable_cards .card .card-body {
     position: absolute;
     bottom: 0;
@@ -255,7 +262,18 @@ h1, h2, h3, h4 {
 .card.hide {
     display: none;
 }
-
+/*========== SCROLL BAR ==========*/
+::-webkit-scrollbar {
+    width: .8rem;
+    background-color: var(--scroll-bar-color);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+    border-radius: .4rem;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-color-light);
+  }
 /* RWD */
 @media screen and (max-width: 768px) {
     .content-center {
