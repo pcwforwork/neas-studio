@@ -19,7 +19,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+          <ul class="navbar-nav align-items-center ms-auto me-2 mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./index.html#services">關於服務</a>
             </li>
@@ -33,51 +33,111 @@
               <a class="nav-link" href="./index.html#contact">聯絡方式</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">立即預約</a>
+              <a class="nav-link" href="./appointment.html">
+                <button type="button" class="btn btn-primary">立即預約</button>
+              </a>
             </li>
           </ul>
         </div>
       </div>
   </nav> 
 
-    <!-- Message -->
-    <section id="message" class="justify-content-center py-5">
-        <div class="container col-md-5 py-3">
-          <div class="row text-align-center py-3">
-            <p class="title-deco">CONTACT</p>
-            <h1>留言詢問</h1>
-          </div>
-          <form>
-            <div class="mb-3">
-              <label class="form-label">客人尊名</label>
-              <input type="email" placeholder="Aloe" class="form-control">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">電話號碼</label>
-              <input type="number" placeholder="0912345678" class="form-control">
-            </div>
-            <div class="mb-3">
-              <label for="InputEmail" class="form-label">Email</label>
-              <input type="email" placeholder="abc@gmail.com" class="form-control" id="InputEmail" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">問題內容</label>
-              <textarea placeholder="我們會盡快回答您的問題，請耐心等候。" class="form-control" aria-label="With textarea"></textarea>
-            </div>
-            
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">確認</label>
-            </div>
-            <button type="submit" class="btn btn-primary">送出</button>
-          </form>
-            
-        </div>
+    <!-- FAQ -->
+    <section id="faq" class="py-5 bg-color-lighter">
+      <div class="container my-5">
+       <div class="row justify-content-between">
+         <div class="col-md-4 py-3">
+           <div class="content-center">
+             <p class="title-deco">FAQ</p>
+             <h1>常見問題</h1>
+           </div>
+         </div>
+         
+         <div class="accordion col-md-8 py-3" id="accordionExample">
+           <!-- Q1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                   我的指甲很容易斷裂，這樣適合做凝膠美甲嗎？
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                   如果你的指甲容易斷裂、薄又脆弱，很適合利用凝膠美甲來增硬養甲。
+                   凝膠美甲不僅僅是好看美麗的造型，也有加強保護指甲的作用，讓你能養出健康漂亮的甲型。
+                   但是指甲有傷口或是生病時，會建議停止施作。
+                  </div>
+                </div>
+              </div>
+           <!-- Q2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                   做一次凝膠美甲大概要花多久時間？
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                   依款式的難易度和複雜度的不同，需要時間大概在<strong>1-3小時</strong>不等，
+                   因為卸甲、照光、保養都需要一定的時間，建議預約時跟美甲師討論好想要的款式，良好的溝通會讓服務更順暢。
+                  </div>
+                </div>
+              </div>
+           <!-- Q3-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                   甚麼時候要卸甲呢甚麼時候要卸甲呢？
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                   建議3周卸除，會是比較理想的狀態。記得卸甲的時候請找專業的美甲師卸除，千萬別自己摳或撕，避免指甲受傷喔！
+                  </div>
+                </div>
+             </div>
+         </div>        
+       </div>
+     </div>
     </section>
-    
-  
+
+      <!-- Message -->
+  <section id="message" class="justify-content-center py-5">
+    <div class="container col-md-5 py-3">
+      <div class="row text-align-center py-3">
+        <p class="title-deco">MESSAGE</p>
+        <h1>留言詢問</h1>
+      </div>
+      <form>
+        <div class="mb-3">
+          <label class="form-label">客人尊名</label>
+          <input type="text" placeholder="Aloe" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">電話號碼</label>
+          <input type="text" placeholder="0912345678" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="InputEmail" class="form-label">Email</label>
+          <input type="email" placeholder="abc@gmail.com" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+        </div>
+       
+        <div class="mb-3">
+          <label class="form-label">問題內容</label>
+          <textarea placeholder="我們會盡快回答您的問題，請耐心等候。" class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">確認</label>
+        </div>
+        <button type="submit" class="btn btn-primary">送出</button>
+      </form>
+        
+    </div>
+</section>
     <!-- Footer -->
-    <section id="footer" class="bg-color py-5">
+    <section id="footer" class="bg-color pt-5">
       <div class="container">
         <div class="row justify-content-between align-items-center text-align-center">
           <div class="footer_socials col-md-2 py-3">

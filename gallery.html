@@ -19,7 +19,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto me-2 mb-2 mb-lg-0">
+          <ul class="navbar-nav align-items-center ms-auto me-2 mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="./index.html#services">關於服務</a>
             </li>
@@ -33,55 +33,147 @@
               <a class="nav-link" href="./index.html#contact">聯絡方式</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">立即預約</a>
+              <a class="nav-link" href="./appointment.html">
+                <button type="button" class="btn btn-primary">立即預約</button>
+              </a>
             </li>
           </ul>
         </div>
       </div>
   </nav> 
-
+    <!-- Filter gallery -->
     <section class="py-5">
-        <div class="container py-3">
+        <div class="container py-5">
             <div class="filter_buttons py-3">
                 <button type="button" class="btn btn-primary active" data-name="all">全部</button>
                 <button type="button" class="btn btn-primary" data-name="single">單色</button>
                 <button type="button" class="btn btn-primary" data-name="hand-paint">手繪</button>
                 <button type="button" class="btn btn-primary" data-name="event">活動</button>
+                <button type="button" class="btn btn-primary" data-name="material">異材質</button>
             </div>
         </div>
         <div class="container filterable_cards">
             <div class="card" data-name="single">
-              <img src="./images/works/single.JPG" class="card-img" alt="img">
+              <img src="./images/works/single/single-20220924.jpg" class="card-img" alt="img">
               <div class="card-body backdrop-blur">
                     <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="single">單色</button>
                 </div>
             </div>
-
             <div class="card" data-name="single">
-                <img src="./images/works/single.JPG" class="card-img" alt="img">
+                <img src="./images/works/single/single-red.jpg" class="card-img" alt="img">
                 <div class="card-body backdrop-blur">
-                    <button type="button" class="btn btn-outline-secondary btn-sm" data-name="single">單色</button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="single">單色</button>
+                </div>
+            </div>
+            <div class="card" data-name="single">
+                <img src="./images/works/single/sliver-glitter.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="single">單色</button>
                 </div>
             </div>
 
             <div class="card" data-name="event">
-                <img src="./images/works/event-blooming-flower-red (2).jpg" class="card-img" alt="img">
+                <img src="./images/works/event/event-blooming-flower-red.jpg" class="card-img" alt="img">
                 <div class="card-body backdrop-blur">
-                    <button type="button" class="btn btn-outline-secondary btn-sm" data-name="event">活動</button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="event">活動</button>
+                </div>
+            </div>
+            <div class="card" data-name="event">
+                <img src="./images/works/event/event-cateyes-heart-red.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="event">活動</button>
+                </div>
+            </div>
+            <div class="card" data-name="event">
+                <img src="./images/works/event/event-xmas-green.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="event">活動</button>
+                </div>
+            </div>
+            <div class="card" data-name="event">
+                <img src="./images/works/event/event-xmas-materials.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="event">活動</button>
                 </div>
             </div>
 
             <div class="card" data-name="hand-paint">
-                <img src="./images/works/hand-paint-flower (1).jpg" class="card-img" alt="img">
+                <img src="./images/works/hand-paint/hand-paint-20220114.jpg" class="card-img" alt="img">
                 <div class="card-body backdrop-blur">
-                    <button type="button" class="btn btn-outline-secondary btn-sm" data-name="hand-paint">手繪</button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="hand-paint">手繪</button>
+                </div>
+            </div>
+            <div class="card" data-name="hand-paint">
+                <img src="./images/works/hand-paint/hand-paint-blooming-ribbon.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="hand-paint">手繪</button>
+                </div>
+            </div>
+            <div class="card" data-name="hand-paint">
+                <img src="./images/works/hand-paint/hand-paint-blooming-w.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="hand-paint">手繪</button>
+                </div>
+            </div>
+            <div class="card" data-name="hand-paint">
+                <img src="./images/works/hand-paint/hand-paint-flower.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="hand-paint">手繪</button>
+                </div>
+            </div>
+            <div class="card" data-name="hand-paint">
+                <img src="./images/works/hand-paint/hand-paint-flower.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="hand-paint">手繪</button>
+                </div>
+            </div>
+            <div class="card" data-name="hand-paint">
+                <img src="./images/works/hand-paint/hand-paint-grid-red.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="hand-paint">手繪</button>
+                </div>
+            </div>
+            <div class="card" data-name="hand-paint">
+                <img src="./images/works/hand-paint/hand-paint-grid.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="hand-paint">手繪</button>
+                </div>
+            </div>
+            <div class="card" data-name="hand-paint">
+                <img src="./images/works/hand-paint/hand-paint-橘色可愛豹紋.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="hand-paint">手繪</button>
+                </div>
+            </div>
+            <div class="card" data-name="hand-paint">
+                <img src="./images/works/hand-paint/夏日清新的磨石子風格.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="hand-paint">手繪</button>
                 </div>
             </div>
 
-            <div class="card" data-name="hand-paint">
-                <img src="./images/works/hand-paint-grid (1).jpg" class="card-img" alt="img">
+            <div class="card" data-name="material">
+                <img src="./images/works/material/material-cateyes-red.jpg" class="card-img" alt="img">
                 <div class="card-body backdrop-blur">
-                    <button type="button" class="btn btn-outline-secondary btn-sm" data-name="hand-paint">手繪</button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="material">異材質</button>
+                </div>
+            </div>
+            <div class="card" data-name="material">
+                <img src="./images/works/material/material-crystal.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="material">異材質</button>
+                </div>
+            </div>
+            <div class="card" data-name="material">
+                <img src="./images/works/material/material-hand-paint.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="material">異材質</button>
+                </div>
+            </div>
+            <div class="card" data-name="material">
+                <img src="./images/works/material/material-sliver.jpg" class="card-img" alt="img">
+                <div class="card-body backdrop-blur">
+                    <button type="button" class="btn btn-outline-secondary btn-sm rounded-pill" data-name="material">異材質</button>
                 </div>
             </div>
             
@@ -90,7 +182,7 @@
     </section>
 
     <!-- Footer -->
-    <section id="footer" class="bg-color py-5">
+    <section id="footer" class="bg-color pt-5">
       <div class="container">
         <div class="row justify-content-between align-items-center text-align-center">
           <div class="footer_socials col-md-2 py-3">
